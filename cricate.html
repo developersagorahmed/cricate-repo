@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricate</title>
+    <style>
+
+        img{
+            transition: transform .5s ease-in;
+        }
+        .fild{
+            width: 100%;
+            border: 1px solid black;
+            background: rgb(43, 120, 43);
+            border-bottom: 100px solid black;
+            
+
+        }
+        .fild:hover img{
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+
+
+        .ball{
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            background: red;
+            position: relative;
+            left: 648px;
+            transition:1s ease-out .55s ;
+            
+        }
+        .fild:hover .ball{
+           position: relative;
+            right: 800px;
+            transform: translate(800px , -400px) ;
+        }
+    </style>
+</head>
+<body>
+    <div class="fild">
+        <img src="images/bat.png" alt="">
+    
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
